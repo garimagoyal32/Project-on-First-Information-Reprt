@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color:Gray">
+    <form id="form1" runat="server">
+   
+    
+    <div style="position:absolute;top:0px; left:100px;width:1105px;height:200%;background-color:White">
+    <div style="position:absolute;width:100%;height:100px;background-color:#900000">
+    <%--<div style="position:absolute;left:20px;top:5px;width:100px;height:100px">
+        <img alt="" height="80px" src="kl3.png" width="80px" /></div>--%>
+        <div style="position:absolute;left:160px;top:10px;width:613px; height:76px"> 
+             
+                <img alt="" src="heading11.jpg" width="673px" />
+            </div>
+           
+
+         <div style="position:absolute;right:13px; top:10px;width:155px; height:76px"> 
+             
+          
+           
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 
+             
+          
+           
+             <asp:ImageButton ID="ImageButton1" runat="server" AlternateText="Home" 
+                 ForeColor="White" Height="30px" ImageUrl="~/lo.png" ToolTip="Home" 
+                 Width="60px" onclick="ImageButton1_Click" />
+             <br />
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+&nbsp;<asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Size="Medium" 
+                 ForeColor="White" Text="Welcome"></asp:Label>
+             &nbsp;
+             <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="Medium" 
+                 ForeColor="#CCFFCC" Text="Label"></asp:Label>
+            
+             </div>
+             </div>
+       
+        <div style="position:absolute;top:90px; width:100%;height:2%;background-color:darkslategray; margin-bottom: 27px; margin-right: 14px;">
+        
+            <asp:Button ID="Button1" runat="server" Text="Update FIR Status" Width="155px" 
+    BackColor="#333333" ForeColor="White" TabIndex="10" onclick="Button1_Click" />
+    <asp:Button ID="Button2" runat="server" Text="Missing Person Info" Width="155px" 
+    BackColor="#333333" ForeColor="White" onclick="Button2_Click" />
+   <%-- <asp:Button ID="Button3" runat="server" Text="Wanted Person Info" Width="155px" 
+     BackColor="#333333"  ForeColor="White" onclick="Button3_Click"/>--%>
+     <asp:Button ID="Button4" runat="server" Text="Account" Width="155px" 
+     BackColor="#333333"  ForeColor="White" onclick="Button3_Click"/>
+   <%-- <asp:Button ID="Button4" runat="server" Text="Lost/Found Vehicles" Width="137px"
+     BackColor="#333333" ForeColor="White" />--%>
+    <asp:Button ID="Button5" runat="server" Text="FIR Alerts" Width="155px" 
+     BackColor="#333333"  ForeColor="White" onclick="Button5_Click"/>
+    
+     <%-- <asp:Button ID="Button6" runat="server" 
+      Text="Dispatch"  BackColor="#333333"  Width="155px" ForeColor="White" />  --%>
+       <asp:Button ID="Button6" runat="server" 
+      Text="Filer Details"  BackColor="#333333"  Width="155px" ForeColor="White" 
+                onclick="Button6_Click" />  
+      <asp:Button ID="Button7" runat="server" 
+      Text="View FIR"  BackColor="#333333"  Width="155px" ForeColor="White" 
+                onclick="Button7_Click" />  
+      <asp:Button ID="Button8" runat="server" 
+      Text="Edit FIR "  BackColor="#333333"  Width="150px" ForeColor="White" 
+                onclick="Button8_Click" />  
+        </div> 
+        <div style="position:absolute;left:0px;top:154px;height:1200px;background-color:white">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+      
+        </asp:ContentPlaceHolder>
+       
+       </div> 
+    </div>
+    
+    
+    
+      
+    
+    </form>
+</body>
+</html>

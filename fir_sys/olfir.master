@@ -1,0 +1,234 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="olfir.master.cs" Inherits="olfir" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+    a:link {color:Navy;text-decoration:none;}    /* unvisited link */
+			a:visited {color:Navy;text-decoration:none;} /* visited link */
+		/* a:hover {color:blue;background-color:green;text-decoration:underline;}   mouse over link */
+			a:active {color:Navy;text-decoration:none;}    /* selected link */
+    </style>
+</head>
+<body style="background-color:White">
+    <form id="form1" runat="server">
+   
+    
+    <%--<div style="position:absolute;top:0px; left:100px;width:85%;height:100%;background-image:url('gbk4.jpg')">--%>
+    <div style="position:absolute;top:0px; left:100px;width:1130px;height:130%;background-color:White">
+        <div style="position:absolute;width:100%;height:100px;background-color:#900000">
+           <%-- <div style="position:absolute;left:20px;top:5px;width:100px;height:100px">
+                <img alt="" height="80px" src="kl3.png" width="80px" />
+            </div>--%>
+            <div style="position:absolute;left:160px;top:10px;width:613px; height:76px"> 
+             
+                <img alt="" src="heading11.jpg" width="673px" />
+            </div>
+           
+         
+
+            <div style="position:absolute;right:20px;top:10px;width:174px; height:76px"> 
+             
+          
+           
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+             
+          
+           
+             <asp:ImageButton ID="ImageButton1" runat="server" AlternateText="Home" 
+                 ForeColor="White" Height="30px" ImageUrl="~/home1.png" ToolTip="Home" 
+                 Width="30px" onclick="ImageButton1_Click" />
+             &nbsp;
+             &nbsp;&nbsp;
+             <asp:ImageButton ID="ImageButton2" runat="server" ForeColor="White" 
+                 Height="30px" ImageUrl="~/au.png" ToolTip="About Us" Width="30px" 
+                 onclick="ImageButton2_Click" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+             <asp:ImageButton ID="ImageButton3" runat="server" Height="30px" 
+                 ImageUrl="~/cu.png" ToolTip="Contact Us" Width="30px" 
+                 onclick="ImageButton3_Click" />
+                <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Size="Medium" 
+                    ForeColor="#CCCCCC" Text="Label"></asp:Label>
+                &nbsp;&nbsp;&nbsp;
+             
+             </div>
+         </div>
+       
+        <div style="position:absolute;top:90px; width:100%;height:25px;background-color:#2F4F4F">
+
+            <div style="position: absolute;float:right; top: 0px; left: 0px;  ">
+                <asp:Button ID="Button1" runat="server" Text="File FIR" BackColor="#333333" 
+                BorderColor="Gray" ForeColor="White" width="158px" onclick="Button1_Click" />
+             
+       
+             </div>
+
+              <div style="position: absolute;float:right;left:162px; top: 0px;">
+                    <asp:Button ID="Button2" runat="server" Text="Report Police Grievnaces" 
+                        BackColor="#333333" BorderColor="Gray" ForeColor="White" width="158px" 
+                        onclick="Button2_Click"/>
+               
+             </div>
+
+              <div style="position: absolute;float:right;left:324px">
+                    <asp:Button ID="Button3" runat="server" Text="Relaudge FIR" BackColor="#333333" 
+                        BorderColor="Gray" ForeColor="White" width="158px" onclick="Button3_Click"/>
+           
+             </div>
+
+              <div style="position: absolute;float:right;left:486px">
+                    <asp:Button ID="Button4" runat="server" Text="Check FIR Status" 
+                        BackColor="#333333" BorderColor="Gray" ForeColor="White" width="158px" 
+                        onclick="Button4_Click"/>
+         
+
+               
+             </div>
+
+              <div style="position: absolute;float:right;left:648px; right: 122px;">
+                    <asp:Button ID="Button5" runat="server" Text="Search FIR" BackColor="#333333" 
+                        BorderColor="Gray" ForeColor="White" width="158px" onclick="Button5_Click"/>
+           
+            
+            </div>
+       
+
+
+            <div style="position: absolute;float:right;left:809px; top: 0px; width: 158px;">
+            <asp:Button ID="Button6" runat="server" Text="Edit FIR" BackColor="#333333" 
+                    BorderColor="Gray" ForeColor="White" width="158px" onclick="Button6_Click"/>
+         
+             
+               
+             </div>
+
+              <div style="position: absolute;float:right;left:970px">
+             <asp:Button ID="Button7" runat="server" Text="FAQs" BackColor="#333333" 
+                      BorderColor="Gray" ForeColor="White" width="160px" onclick="Button7_Click1"/>
+           
+            </div>
+           
+        </div> 
+       
+
+         <div style="position: absolute;top:130px;left:3px;width:190px;height:550px;border-radius:0.5em;box-shadow: 0px 0px 5px blue;font-size:16px;color:Navy; ">
+        <p style="font-family: 'Times New Roman', Times, serif; font-size: x-large; font-weight: normal; color: #0000FF">
+            &nbsp;&nbsp; Other Websites&nbsp;
+            </p>
+
+             <hr />
+            &nbsp;&nbsp;&nbsp;
+             <a href="https://202.138.105.10 /public/default.aspx" target="_blank">Karnataka one </a><br /><br />
+
+ &nbsp;&nbsp;&nbsp;
+<a href="https://210.212.203.180/public/default.aspx" target="_blank">Bangalore one</a><br /><br />
+
+ &nbsp;&nbsp;&nbsp;
+ <a href="http://164.100.80.7/kgsc2/" target="_blank">Sakala Services</a><br /><br />
+
+ &nbsp;&nbsp;&nbsp;
+ <a href="http://164.100.155.113/trackchild/index.php" target="_blank">Bangalore City Traffic </a><br /><br />
+
+ &nbsp;&nbsp;&nbsp;
+ <a href="http://ksp.gov.in/" target="_blank">Karnataka Police<br /><br />
+
+ &nbsp;&nbsp;&nbsp;
+<a href="http://164.100.155.113/trackchild/index.php" target="_blank">Track the Missing Children</a><br />
+             <br />
+           
+ &nbsp;&nbsp;&nbsp;<a href="http://bcp.gov.in/" target="_blank">Bangalore City Police</a><br />
+             <br />
+             <br />           
+             <br />
+
+ &nbsp;&nbsp;&nbsp;
+        </div>
+        
+         <div style=" position: absolute;top:130px; left:929px; width:200px; height:550px; border-radius:0.5em;box-shadow: 0px 0px 5px blue; font-size:16px;color:Navy;float:right">
+        <p style="font-family: 'Times New Roman', Times, serif; font-size: x-large; font-weight: normal; color: #0000FF">
+            &nbsp;&nbsp; Quick Links&nbsp;
+            </p>
+
+             <hr />
+             &nbsp;&nbsp;&nbsp;
+
+
+             <asp:ImageButton ID="ImageButton9" runat="server" Height="30px" 
+                 ImageAlign="AbsMiddle" ImageUrl="~/login.jpg" Width="30px" 
+                 onclick="ImageButton9_Click" />
+&nbsp;&nbsp;<a href="login.aspx" > Portal Login</a><br /><br />
+
+ &nbsp;&nbsp;&nbsp;
+
+
+             <asp:ImageButton ID="ImageButton10" runat="server" Height="30px" 
+                 ImageAlign="AbsMiddle" ImageUrl="~/mpi.jpg" Width="30px" 
+                 onclick="ImageButton10_Click" />
+&nbsp;&nbsp; <a href="missing.aspx">Missing Person Info</a> <br /><br />
+
+ &nbsp;&nbsp;&nbsp;
+
+
+             <asp:ImageButton ID="ImageButton11" runat="server" Height="30px" 
+                 ImageAlign="AbsMiddle" ImageUrl="~/wanted.jpg" Width="30px" 
+                 onclick="ImageButton11_Click" />
+&nbsp;&nbsp; <a href="http://www.ksp.gov.in/home/wanted.php" target="_blank">Wanted Person Info </a><br /><br />
+
+ &nbsp;&nbsp;&nbsp;
+
+
+             <asp:ImageButton ID="ImageButton12" runat="server" Height="30px" 
+                 ImageAlign="AbsMiddle" ImageUrl="~/vehicle.jpg" Width="30px" 
+                 onclick="ImageButton12_Click" />
+&nbsp;&nbsp; <a href="http://www.ksp.gov.in/home/vehicles.php" target="_blank">Unclaimed/Lost </a>  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Vehicles<br /><br />
+
+ &nbsp;&nbsp;&nbsp;
+
+
+             <asp:ImageButton ID="ImageButton13" runat="server" Height="30px" 
+                 ImageAlign="AbsMiddle" ImageUrl="~/find.jpg" Width="30px" 
+                 onclick="ImageButton13_Click" />
+&nbsp;&nbsp;<a href="find.aspx" > Find Your Police </a> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Station<br /><br />
+        
+    </div>
+    
+    <div style="position:absolute;left:215px; width:680px; height:30px;top:124px;">
+        <div style="position:absolute;left:0px; width:75px; height:30px;"> 
+        <img alt="" src="hl.jpg" style="width: 75px; height: 30px;" />
+        </div>
+        
+        <div style="position:absolute;left:80px; width:580px; height:30px;top:5px;">
+            <marquee direction="left" behavior="slide" loop="1000" scrollamount="3"
+            style=" color:#900000;font-size:medium;font-weight:bold;">Emergency Help : 100 <image src="hl2.jpeg" height="10px" width="20px"></image> Ambulance: 108
+<image src="hl2.jpeg" height="10px" width="20px"></image> 
+Fire: 101
+<image src="hl2.jpeg" height="10px" width="20px"></image> Live Traffic Help : 103  <image src="hl2.jpeg" height="10px" width="20px"></image>DG Control Room: 080-22211777
+<image src="hl2.jpeg" height="10px" width="20px"></image> 
+CID Control Room: 080-22094498
+<image src="hl2.jpeg" height="10px" width="20px"></image> 
+Commissioner of Police Control Room: 080-22250999
+<image src="hl2.jpeg" height="10px" width="20px"></image> 
+Toll free Helpline: 1800-4250-100 <image src="hl2.jpeg" height="10px" width="20px"></image>     Children Helpline : 1098  <image src="hl2.jpeg" height="10px" width="20px"></image>    Women Helpline : 1091   <image src="hl2.jpeg" height="10px" width="20px"></image>   Elderly Helpline : 1090 
+
+</marquee> 
+
+        </div>
+     </div>
+        <div style="position:absolute;left:212px; width:680px; height:1200px;top:174px;">
+       
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+      
+        </asp:ContentPlaceHolder>
+        
+        </div>
+        </div>
+        </form>
+   
+</body>
+</html>
