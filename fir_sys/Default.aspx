@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     
-    <div style="width:700px; box-shadow: 0px 0px 15px #888888;background-color:#F5F5F5"> 
+    <div style="width:900px; box-shadow: 0px 0px 15px #888888;background-color:#F5F5F5"> 
         <br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label22" runat="server" Font-Bold="True" Font-Size="Large" 
             ForeColor="Maroon" Text="Filer's Details"></asp:Label>
